@@ -3,6 +3,11 @@ require 'raindrops'
 describe Raindrops do
   describe '.convert' do
     subject(:described_module) { Raindrops }
+    context 'constants' do
+      it 'has a constant "PLING" with the string "Pling"' do
+        expect(described_module::PLING).to eq('Pling')
+      end
+    end
     context 'Numbers with only one factor' do
       it "outputs 'Pling' if the input is a factor of 3" do
         expect(described_module.convert(3)).to eq('Pling')

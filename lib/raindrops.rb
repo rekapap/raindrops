@@ -2,8 +2,10 @@
 
 # Raindrops module
 module Raindrops
+  PLING = 'Pling'
+
   def self.convert(number)
-    return 'Pling' if number == 3
+    return PLING if number == 3
 
     number.abs.to_s
   end
