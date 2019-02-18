@@ -11,6 +11,12 @@ Since the description says to test the expected range of inputs, I included diff
 
 I fully test-driven this project, but because of simplicity of the problem (it's  only a function), I used unit tests. Later on I added some feature tests with the given examples, but personally, I think unit tests would be sufficent on their own.
 
+## Description
+Write a function that takes as its input a number (n) and converts it to a string, the contents of which depend on the number's factors:
+- if the number has a factor of 3, output 'Pling'
+- if the number has a factor of 5, output 'Plang'
+- if the number has a factor of 7, output 'Plong'
+- if the number does not have any of the above as a factor simply return the numbers digits
 
 ## Structure
 Folders:
@@ -18,13 +24,6 @@ Folders:
 - spec: tests
 - doc: genereated documentation
 - coverage: generated test coverage files
-
-## Description
-Write a function that takes as its input a number (n) and converts it to a string, the contents of which depend on the number's factors:
-- if the number has a factor of 3, output 'Pling'
-- if the number has a factor of 5, output 'Plang'
-- if the number has a factor of 7, output 'Plong'
-- if the number does not have any of the above as a factor simply return the numbers digits
 
 ## Documentation
 1. Generate Documentation:
