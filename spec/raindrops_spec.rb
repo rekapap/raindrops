@@ -64,6 +64,9 @@ describe Raindrops do
         it 'can handle a big input, which is not a factor of 3, 5 or 7' do
           expect(described_module.convert(-2_147_483_647)).to eq('2147483647')
         end
+        it 'can handle a big negative input, which is a factor' do
+          expect(described_module.convert(-2_147_483_645)).to eq(plang)
+        end
       end
     end
     context 'zero' do
