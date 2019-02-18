@@ -8,3 +8,19 @@ Write a function that takes as its input a number (n) and converts it to a strin
 - if the number has a factor of 5, output 'Plang'
 - if the number has a factor of 7, output 'Plong'
 - if the number does not have any of the above as a factor simply return the numbers digits
+
+## Technologies
+### Languages
+- Ruby
+
+### Testing framework
+- Rspec
+
+### Linter
+- Rubocop
+
+### Test Coverage
+- Simplecov
+
+### Documentation
+- RDoc
