@@ -40,6 +40,16 @@ Install bundle:
 bundle install
 ```
 
+## How to use
+1. Require the `Raindrops` module in your file
+```ruby
+require_relative 'YOUR/PATH/TO/lib/raindrops.rb'
+```
+2. Call the `convert` function with a `number`:
+```ruby
+Raindrops.convert(number)
+```
+
 ## How to run tests
 In your project folder run this command from terminal:
 ```bash
