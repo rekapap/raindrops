@@ -2,6 +2,7 @@
 
 # Raindrops module
 module Raindrops
+  # String 'Pling' for factors of 3
   PLING = 'Pling'
   PLANG = 'Plang'
   PLONG = 'Plong'
