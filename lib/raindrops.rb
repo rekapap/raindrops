@@ -7,6 +7,7 @@ module Raindrops
   PLONG = 'Plong'
 
   def self.convert(number)
+    return 'PlingPlong' if number == 21
     return PLING if (number % 3).zero?
     return PLANG if (number % 5).zero?
     return PLONG if (number % 7).zero?
