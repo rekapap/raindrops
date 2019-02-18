@@ -1,22 +1,22 @@
 require 'raindrops'
 
 describe Raindrops do
-  describe '.convert' do
-    subject(:described_module) { Raindrops }
-    let(:pling) { described_module::PLING }
-    let(:plang) { described_module::PLANG }
-    let(:plong) { described_module::PLONG }
-    context 'constants' do
-      it 'has a constant "PLING" with the string "Pling"' do
-        expect(described_module::PLING).to eq('Pling')
-      end
-      it 'has a constant "PLANG" with the string "Plang"' do
-        expect(described_module::PLANG).to eq('Plang')
-      end
-      it 'has a constant "PLONG" with the string "Plong"' do
-        expect(described_module::PLONG).to eq('Plong')
-      end
+  subject(:described_module) { Raindrops }
+  let(:pling) { described_module::PLING }
+  let(:plang) { described_module::PLANG }
+  let(:plong) { described_module::PLONG }
+  context 'constants' do
+    it 'has a constant "PLING" with the string "Pling"' do
+      expect(described_module::PLING).to eq('Pling')
     end
+    it 'has a constant "PLANG" with the string "Plang"' do
+      expect(described_module::PLANG).to eq('Plang')
+    end
+    it 'has a constant "PLONG" with the string "Plong"' do
+      expect(described_module::PLONG).to eq('Plong')
+    end
+  end
+  describe '.convert' do
     context 'Positive and negative numbers' do
       context 'Numbers with only one factor' do
         it "outputs 'Pling' if the input is a factor of 3" do
