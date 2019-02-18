@@ -2,6 +2,16 @@
 
 Raindrops Tech Test
 
+## Approach
+I chose Ruby as a programming language because it's the one I'm most familiar with. A complete list of the technologies that I've used for this project can be found in the "Technologies" section.
+
+The task I was given consisted of implementing a single function, but I thought it would be best practice to write it inside a module, which I called "Raindrop".
+
+Since the description says to test the expected range of inputs, I included different cases in my tests: negative integers, zero, large values.
+
+I fully test-driven this project, but because of simplicity of the problem (it's  only a function), I used unit tests. Later on I added some feature tests with the given examples, but personally, I think unit tests would be sufficent on their own.
+
+
 ## Structure
 Folders:
 - lib: implementation
