@@ -21,6 +21,7 @@ Write a function that takes as its input a number (n) and converts it to a strin
 
 ### Test Coverage
 - Simplecov
+- Simplecov console
 
 ### Documentation
 - RDoc
