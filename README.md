@@ -9,6 +9,12 @@ Write a function that takes as its input a number (n) and converts it to a strin
 - if the number has a factor of 7, output 'Plong'
 - if the number does not have any of the above as a factor simply return the numbers digits
 
+## Documentation
+Open the the the index.html in your browser:
+```text
+doc/index.html
+```
+
 ## Technologies
 ### Languages
 - Ruby
