@@ -7,6 +7,9 @@ describe Raindrops do
       it 'has a constant "PLING" with the string "Pling"' do
         expect(described_module::PLING).to eq('Pling')
       end
+      it 'has a constant "PLANG" with the string "Plang"' do
+        expect(described_module::PLANG).to eq('Plang')
+      end
     end
     context 'Numbers with only one factor' do
       it "outputs 'Pling' if the input is a factor of 3" do
