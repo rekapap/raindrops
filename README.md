@@ -2,6 +2,13 @@
 
 Raindrops Tech Test
 
+## Structure
+Folders:
+- lib: implementation
+- spec: tests
+- doc: genereated documentation
+- coverage: generated test coverage files
+
 ## Description
 Write a function that takes as its input a number (n) and converts it to a string, the contents of which depend on the number's factors:
 - if the number has a factor of 3, output 'Pling'
@@ -18,7 +25,7 @@ rdoc
 ```text
 doc/index.html
 ```
-## Setup
+## Installation
 Install bundle:
 ```bash
 bundle install
