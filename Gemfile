@@ -4,9 +4,9 @@ ruby '2.5.1'
 
 gem 'rdoc'
 require 'rdoc/rdoc'
-require 'capybara/rspec'
 
 group :test do
+  gem 'capybara'
   gem 'rspec'
   gem 'rubocop'
   gem 'simplecov', require: false
