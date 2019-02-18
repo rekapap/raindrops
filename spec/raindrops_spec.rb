@@ -5,6 +5,7 @@ describe Raindrops do
   let(:pling) { described_module::PLING }
   let(:plang) { described_module::PLANG }
   let(:plong) { described_module::PLONG }
+  let(:pling_plang_plong) { 'PlingPlangPlong' }
   context 'constants' do
     it 'has a constant "PLING" with the string "Pling"' do
       expect(described_module::PLING).to eq('Pling')
@@ -46,7 +47,7 @@ describe Raindrops do
           expect(described_module.convert(-15)).to eq('PlingPlang')
         end
         it "outputs 'PlingPlangPlong' for an input that is a factor of 3, 5, and 7" do
-          expect(described_module.convert(-105)).to eq('PlingPlangPlong')
+          expect(described_module.convert(-105)).to eq(pling_plang_plong)
         end
         it "outputs 'PlangPlong' for an input that is a factor of 5 and 7" do
           expect(described_module.convert(-35)).to eq('PlangPlong')
@@ -71,7 +72,7 @@ describe Raindrops do
     end
     context 'zero' do
       it 'is a factor of 3, 5 and 7, so it outputs PlingPlangPlong' do
-        expect(described_module.convert(0)).to eq('PlingPlangPlong')
+        expect(described_module.convert(0)).to eq(pling_plang_plong)
       end
     end
   end
