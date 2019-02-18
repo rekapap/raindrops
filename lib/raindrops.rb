@@ -2,7 +2,7 @@
 
 # Raindrops module
 module Raindrops
-  def self.convert(_number)
-    '1'
+  def self.convert(number)
+    number.abs.to_s
   end
 end
