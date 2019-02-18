@@ -32,6 +32,11 @@ In your project folder run this command from terminal:
 rubocop
 ```
 
+## Test Coverage
+```text
+COVERAGE: 100.00% -- 70/70 lines in 3 files
+```
+
 ## Technologies
 ### Languages
 - Ruby
