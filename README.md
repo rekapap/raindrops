@@ -10,7 +10,11 @@ Write a function that takes as its input a number (n) and converts it to a strin
 - if the number does not have any of the above as a factor simply return the numbers digits
 
 ## Documentation
-Open the the the index.html in your browser:
+1. Generate Documentation:
+```bash
+rdoc
+```
+2. Open the the the index.html in your browser:
 ```text
 doc/index.html
 ```
