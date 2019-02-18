@@ -12,6 +12,9 @@ describe Raindrops do
       it "outputs 'Pling' if the input is a factor of 3" do
         expect(described_module.convert(3)).to eq('Pling')
       end
+      it "outputs 'Pling' for negative input that is a factor of 3" do
+        expect(described_module.convert(-6)).to eq('Pling')
+      end
     end
     context 'Numbers with no factors' do
       it "outputs the number's digits' if the integer is not a factor of 3, 5 or 7" do
