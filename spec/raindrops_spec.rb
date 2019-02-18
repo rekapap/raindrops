@@ -60,6 +60,11 @@ describe Raindrops do
           expect(described_module.convert(-13)).to eq('13')
         end
       end
+      context 'Big values' do
+        it 'can handle a big input, which is not a factor of 3, 5 or 7' do
+          expect(described_module.convert(-2_147_483_647)).to eq('2147483647')
+        end
+      end
     end
     context 'zero' do
       it 'is a factor of 3, 5 and 7, so it outputs PlingPLangPlong' do
