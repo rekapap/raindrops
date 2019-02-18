@@ -5,6 +5,7 @@ describe Raindrops do
     subject(:described_module) { Raindrops }
     let(:pling) { described_module::PLING }
     let(:plang) { described_module::PLANG }
+    let(:plong) { described_module::PLONG }
     context 'constants' do
       it 'has a constant "PLING" with the string "Pling"' do
         expect(described_module::PLING).to eq('Pling')
@@ -30,10 +31,10 @@ describe Raindrops do
         expect(described_module.convert(-25)).to eq(plang)
       end
       it "outputs 'Plong' if the input is a factor of 7" do
-        expect(described_module.convert(7)).to eq('Plong')
+        expect(described_module.convert(7)).to eq(plong)
       end
       it "outputs 'Plong' for negative input that is a factor of 7" do
-        expect(described_module.convert(-14)).to eq('Plong')
+        expect(described_module.convert(-14)).to eq(plong)
       end
     end
     context 'Numbers with no factors' do
