@@ -14,6 +14,11 @@ Open the the the index.html in your browser:
 ```text
 doc/index.html
 ```
+## Setup
+Install bundle:
+```bash
+bundle install
+```
 
 ## Technologies
 ### Languages
