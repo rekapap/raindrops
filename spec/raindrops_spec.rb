@@ -17,46 +17,53 @@ describe Raindrops do
         expect(described_module::PLONG).to eq('Plong')
       end
     end
-    context 'Numbers with only one factor' do
-      it "outputs 'Pling' if the input is a factor of 3" do
-        expect(described_module.convert(3)).to eq(pling)
+    context 'Positive and negative numbers' do
+      context 'Numbers with only one factor' do
+        it "outputs 'Pling' if the input is a factor of 3" do
+          expect(described_module.convert(3)).to eq(pling)
+        end
+        it "outputs 'Pling' for negative input that is a factor of 3" do
+          expect(described_module.convert(-6)).to eq(pling)
+        end
+        it "outputs 'Plang' if the input that is a factor of 5" do
+          expect(described_module.convert(5)).to eq(plang)
+        end
+        it "outputs 'Plang' for negative input that is a factor of 5" do
+          expect(described_module.convert(-25)).to eq(plang)
+        end
+        it "outputs 'Plong' if the input is a factor of 7" do
+          expect(described_module.convert(7)).to eq(plong)
+        end
+        it "outputs 'Plong' for negative input that is a factor of 7" do
+          expect(described_module.convert(-14)).to eq(plong)
+        end
       end
-      it "outputs 'Pling' for negative input that is a factor of 3" do
-        expect(described_module.convert(-6)).to eq(pling)
+      context 'Numbers with multiple factors' do
+        it "outputs 'PlingPlong' for an input that is a factor of 3 and 7, but not 5" do
+          expect(described_module.convert(21)).to eq('PlingPlong')
+        end
+        it "outputs 'PlingPlang' for a negative input that is a factor of 3 and 5, but not 7" do
+          expect(described_module.convert(-15)).to eq('PlingPlang')
+        end
+        it "outputs 'PlingPlangPlong' for an input that is a factor of 3, 5, and 7" do
+          expect(described_module.convert(-105)).to eq('PlingPlangPlong')
+        end
+        it "outputs 'PlangPlong' for an input that is a factor of 5 and 7" do
+          expect(described_module.convert(-35)).to eq('PlangPlong')
+        end
       end
-      it "outputs 'Plang' if the input that is a factor of 5" do
-        expect(described_module.convert(5)).to eq(plang)
-      end
-      it "outputs 'Plang' for negative input that is a factor of 5" do
-        expect(described_module.convert(-25)).to eq(plang)
-      end
-      it "outputs 'Plong' if the input is a factor of 7" do
-        expect(described_module.convert(7)).to eq(plong)
-      end
-      it "outputs 'Plong' for negative input that is a factor of 7" do
-        expect(described_module.convert(-14)).to eq(plong)
+      context 'Numbers with no factors' do
+        it "outputs the number's digits' if the integer is not a factor of 3, 5 or 7" do
+          expect(described_module.convert(1)).to eq('1')
+        end
+        it "outputs a negative number's digits' if the integer is not a factor of 3, 5 or 7" do
+          expect(described_module.convert(-13)).to eq('13')
+        end
       end
     end
-    context 'Numbers with multiple factors' do
-      it "outputs 'PlingPlong' for an input that is a factor of 3 and 7, but not 5" do
-        expect(described_module.convert(21)).to eq('PlingPlong')
-      end
-      it "outputs 'PlingPlang' for a negative input that is a factor of 3 and 5, but not 7" do
-        expect(described_module.convert(-15)).to eq('PlingPlang')
-      end
-      it "outputs 'PlingPlangPlong' for an input that is a factor of 3, 5, and 7" do
-        expect(described_module.convert(-105)).to eq('PlingPlangPlong')
-      end
-      it "outputs 'PlangPlong' for an input that is a factor of 5 and 7" do
-        expect(described_module.convert(-35)).to eq('PlangPlong')
-      end
-    end
-    context 'Numbers with no factors' do
-      it "outputs the number's digits' if the integer is not a factor of 3, 5 or 7" do
-        expect(described_module.convert(1)).to eq('1')
-      end
-      it "outputs a negative number's digits' if the integer is not a factor of 3, 5 or 7" do
-        expect(described_module.convert(-13)).to eq('13')
+    context 'zero' do
+      it 'is a factor of 3, 5 and 7, so it outputs PlingPLangPlong' do
+        expect(described_module.convert(0)).to eq('PlingPlangPlong')
       end
     end
   end
