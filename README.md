@@ -21,8 +21,15 @@ bundle install
 ```
 
 ## How to run tests
+In your project folder run this command from terminal:
 ```bash
 rspec
+```
+
+## How to run linter
+In your project folder run this command from terminal:
+```bash
+rubocop
 ```
 
 ## Technologies
