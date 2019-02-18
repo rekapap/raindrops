@@ -47,6 +47,9 @@ describe Raindrops do
       it "outputs 'PlingPlangPlong' for an input that is a factor of 3, 5, and 7" do
         expect(described_module.convert(-105)).to eq('PlingPlangPlong')
       end
+      it "outputs 'PlangPlong' for an input that is a factor of 5 and 7" do
+        expect(described_module.convert(-35)).to eq('PlangPlong')
+      end
     end
     context 'Numbers with no factors' do
       it "outputs the number's digits' if the integer is not a factor of 3, 5 or 7" do
