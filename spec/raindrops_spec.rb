@@ -28,6 +28,9 @@ describe Raindrops do
       it "outputs 'Plong' if the input is a factor of 7" do
         expect(described_module.convert(7)).to eq('Plong')
       end
+      it "outputs 'Plong' for negative input that is a factor of 7" do
+        expect(described_module.convert(-14)).to eq('Plong')
+      end
     end
     context 'Numbers with no factors' do
       it "outputs the number's digits' if the integer is not a factor of 3, 5 or 7" do
