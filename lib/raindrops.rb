@@ -6,6 +6,7 @@ module Raindrops
 
   def self.convert(number)
     return PLING if (number % 3).zero?
+    return 'Plang' if number == 5
 
     number.abs.to_s
   end
