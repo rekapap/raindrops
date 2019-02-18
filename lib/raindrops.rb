@@ -4,6 +4,7 @@
 module Raindrops
   # String 'Pling' for factors of 3
   PLING = 'Pling'
+  # String 'Plang' for factors of 5
   PLANG = 'Plang'
   PLONG = 'Plong'
 
