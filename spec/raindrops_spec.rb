@@ -70,7 +70,7 @@ describe Raindrops do
       end
     end
     context 'zero' do
-      it 'is a factor of 3, 5 and 7, so it outputs PlingPLangPlong' do
+      it 'is a factor of 3, 5 and 7, so it outputs PlingPlangPlong' do
         expect(described_module.convert(0)).to eq('PlingPlangPlong')
       end
     end
