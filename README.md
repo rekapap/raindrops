@@ -63,6 +63,7 @@ COVERAGE: 100.00% -- 70/70 lines in 3 files
 
 ### Testing framework
 - Rspec
+- Capybara (capybara/rspec used in feature tests)
 
 ### Linter
 - Rubocop
