@@ -20,6 +20,11 @@ Install bundle:
 bundle install
 ```
 
+## How to run tests
+```bash
+rspec
+```
+
 ## Technologies
 ### Languages
 - Ruby
